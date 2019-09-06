@@ -1,0 +1,19 @@
+from EightPuzzle import EightPuzzle
+import sys
+
+def main():
+    start = sys.argv[1]
+    goal = sys.argv[2]
+    puzzleOption = sys.argv[3]
+    algoOption = sys.argv[4]
+    
+    
+    
+    if puzzleOption == "0": #eightpuzzle
+        ep = EightPuzzle(start, goal)
+        print (ep.getPath(algoOption))
+        print ()
+    
+    
+if __name__ == "__main__":
+    main()

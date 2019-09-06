@@ -1,0 +1,50 @@
+
+from EPSearch.py import EPSearch
+from EPBoard.py import EPBoard
+
+
+class EightPuzzle(object):
+    startState = ""
+    goalState = ""
+    
+    def __init__(self, ss, gs):
+        self.startState = ss
+        self.goalState = gs
+    
+    def getStart(self):
+        return self.startState
+    
+    def getGoal(self):
+        return self.goalState
+    
+    def setStart(self, ss):
+        self.startState = ss
+        
+    def setGoal(self, gs):
+        self.goalState = gs
+        
+    def getPath(self, algo):
+        #return [x for x in range(int(self.startState), int(self.goalState))]
+        
+        search = EPSearch()
+        startBoard = EPBoard(self.startState, 0)
+        print (startBoard + "\n")
+        
+        goalBoard = EPBoard(self.goalState, 0)
+        print (goalBoard)
+        
+        """
+        if algo == 0: #bfs
+            return search.bfsSolve(startBoard, goalBoard)
+        
+        if algo == 1: #dfs
+            return search.dfsSolve(startBoard, goalBoard)
+        
+        if algo == 2: #iddfs
+            return search.iddfsSolve(startBoard, goalBoard)
+        
+        if algo == 3: #a*
+            return search.astarSolve(startBoard, goalBoard)
+            """
+            
+        

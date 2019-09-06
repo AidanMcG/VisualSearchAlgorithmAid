@@ -1,0 +1,38 @@
+from EPBoard import EPBoard
+
+class EPSearch(object):
+
+    timeTaken = 0
+    cost = 0
+    depth = 0
+    nodesExpanded = 0
+    
+    def __init__(self, tt = 0, c = 0, d = 0, ne = 0):
+        self.TimeTaken = tt
+        self.cost = c
+        self.depth = d
+        self.nodesExpanded = ne
+    
+    def bfsSolve():
+        pass
+    
+    def dfsSolve():
+        pass
+    
+    def iddfsSolve():
+        pass
+    
+    def astarSolve():
+        pass
+    
+    def getTimeTaken():
+        return self.timeTaken
+    
+    def getCost():
+        return self.cost
+    
+    def getDepth():
+        return self.depth
+    
+    def getNodesExpanded():
+        return self.nodesExpanded

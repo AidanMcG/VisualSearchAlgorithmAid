@@ -1,0 +1,33 @@
+from EPCoord import EPCoord
+
+class EPBoard(object):
+    
+    heuristic = 0
+    moves = None
+    state = ""
+    
+    def __init__(self, s, h, m = None):
+        self.state = s
+        self.heursitic = h
+
+    def equals(self, other):
+        pass
+    
+    def h(self):
+        pass
+        
+    def f(self):
+        pass
+    
+    def getChildren(self):
+        pass
+    
+    def __str__(self):
+        i=0
+        while i > len(state):
+            if i % 3==0:
+                print ("\n")
+            else:
+                print (state[i])
+                
+        pass

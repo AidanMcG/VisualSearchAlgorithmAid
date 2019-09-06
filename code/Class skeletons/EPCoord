@@ -1,0 +1,11 @@
+
+
+class EPCoord(object):
+
+    col = 0
+    row = 0
+    
+    def __init__(self, x, y):
+        self.col = x
+        self.row = y
+        
